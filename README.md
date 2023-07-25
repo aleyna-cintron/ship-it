@@ -9,32 +9,32 @@ ShipIt is a small project that consists of HTML files, images, and a simple Java
 
 The repository contains the following files and directories:
 
-ship-it/
-|-- assets/
-| |-- css/
-| | |-- style.css
-| | |-- normalize.css
-| |
-| |-- img/
-| | |-- aleyna_pfp.jpeg
-| | |-- anchor.png
-| | |-- beach.jpg
-| | |-- christmas.jpg
-| | |-- fight.jpg
-| | |-- fireworks.jpg
-| | |-- hiroshige.jpg
-| | |-- logo.png
-| | |-- lorenzo.jpg
-| |
-| |-- js/
-| |-- script.js
-|
-|-- home.html
-|-- login_page.html
-|-- post_detail.html
-|-- profile_page.html
-|-- users.html
-|-- README.md
+ship-it/  
+|-- assets/  
+| |-- css/  
+| | |-- style.css  
+| | |-- normalize.css  
+| |  
+| |-- img/  
+| | |-- aleyna_pfp.jpeg  
+| | |-- anchor.png  
+| | |-- beach.jpg  
+| | |-- christmas.jpg  
+| | |-- fight.jpg  
+| | |-- fireworks.jpg  
+| | |-- hiroshige.jpg  
+| | |-- logo.png  
+| | |-- lorenzo.jpg  
+| |  
+| |-- js/  
+| |-- script.js  
+|  
+|-- home.html  
+|-- login_page.html  
+|-- post_detail.html  
+|-- profile_page.html  
+|-- users.html  
+|-- README.md  
 
 ### Description of Files
 
