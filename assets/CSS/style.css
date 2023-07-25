@@ -1,0 +1,121 @@
+body{
+    background-color: black;
+}
+
+/* Header */
+header{
+    color: #D7B877;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header li:hover{
+    background-color: #D7B877;
+    color: black;
+    outline:2px solid black;
+}
+
+/* Navbar */
+header h1{
+    position: absolute;
+    top: 45px;
+    left:108px;
+}
+
+/* Top Posts */
+section h2{
+    color: #D7B877;
+}
+
+.top_post_content , .new_post_content, .users{
+    background-color: #F6EED8;
+}
+
+/* Footer */
+footer{
+    color: #D7B877;
+}
+
+footer #logo {
+    border-top: 1px solid #383838;
+}
+
+/* Font */
+.open_san{
+    font-family: "Open Sans";
+}
+
+.nunito{
+    font-family: Nunito;
+}
+
+.signika_negative{
+    font-family: "Signika Negative";
+}
+
+/* Post Detail Page */
+textarea{
+    resize:none;
+}
+
+#comment_btn, #login-btn, #edit-btn{
+    background-color: #D7B877;
+}
+
+#comment_btn:hover, #login-btn:hover, #edit-btn:hover{
+    background-color: black;
+    color: #D7B877;
+    outline:2px solid #D7B877;
+}
+
+h2 a:hover{
+    border-bottom: 1px solid black;
+}
+
+/* Profile page */
+
+#pfp, .pfp {
+    border-radius: 50%;
+}
+
+#username , #login {
+    color: #D7B877;
+}
+
+/* Login Page */
+#email , #password {
+    border-bottom: solid #1a1a1a;
+}
+
+.gray {
+    color:#636363;
+}
+
+.gold {
+    color: #D7B877;
+}
+
+#container {
+    position: relative;
+    min-height: 125vh;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#content_wrap{
+    padding-bottom: 2.5rem;
+}
+
+.scale:hover{
+    transform: scale(1.02)
+}
+#output li{
+    font-family: "Open Sans";
+    font-size: large;
+}

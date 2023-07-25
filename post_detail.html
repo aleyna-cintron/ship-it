@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Detail Page</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Signika+Negative" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
+
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="flex flex-wrap flow-row md:justify-between items-center bg-black">
+        <div id="logo" class="p-4 w-full md:w-auto md:m-0">
+            <a href="home.html">
+                <img class="h-28 m-auto inline-block" src="assets/IMG/anchor.png" alt="ShipIt Logo">
+                <div class="inline-block">
+                    <h1 class="text-6xl font-black nunito">ShipIt</h1>
+                </div>
+            </a>
+        </div>
+        <navbar>
+            <ul class="nunito list-none flex flex-col items-center font-semibold text-xl md:flex-row md:space-x-14 p-4 md:p-6 lg:p-14 w-screen md:w-auto">
+                <li class="p-2"><a href="login_page.html">Login</a></li>
+                <li class="p-2"><a href="home.html">Posts</a></li>
+                <li class="p-2"><a href="users.html">Users</a></li>
+                <li class="p-2"><a href="profile_page.html">Profile</a></li>
+            </ul>
+        </navbar>
+    </header>
+
+    <!-- Post Content -->
+    <section class="max-w-lg grid grid-cols-1 m-auto p-6 mt-10 md:max-w-2xl lg:max-w-5xl xl:max-w-6xl">
+        <article class="mt-80 md:mt-40">
+            <div class="top_post_content">
+                <img id="post_img" class="m-auto" src="assets/IMG/fight.jpeg">
+                <div id="top_post_text" class="ml-6">
+                    <h2 class="open_san text-3xl text-black mt-4 mb-2 lg:text-4xl"><a href="">Donec vestibulum commodo ante</a></h2>
+                    <p class="signika_negative text-base lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus libero ac augue bibendum, id porta est euismod. Proin non sem velit. In libero urna, auctor at turpis vitae, vestibulum venenatis purus. Maecenas auctor lorem id ultricies finibus. Pellentesque non mattis arcu. Proin sit amet nulla id mauris lobortis maximus. Ut bibendum blandit ante, eu tincidunt eros lacinia vitae. Fusce ultrices blandit nisl quis placerat. In sagittis vestibulum quam vel porta. Duis a venenatis purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget eleifend arcu. Cras volutpat ultricies felis, sed gravida lacus finibus sit amet. Vivamus ultricies tincidunt ullamcorper. Proin luctus fringilla nulla, nec dictum neque aliquet.</p>
+                    <br>
+                    <p class="signika_negative text-base lg:text-lg">Cras ac odio aliquet, bibendum metus sodales, cursus ante. Praesent a cursus massa, eu lobortis dui. Vivamus venenatis vestibulum risus sed ultricies. Integer bibendum condimentum ipsum eu commodo. Sed finibus et dolor vel laoreet. Proin vel mauris sed nisl ullamcorper tempus tempor et turpis. In non tincidunt nunc. Vestibulum mollis, lectus ut euismod finibus, leo massa tincidunt quam, nec sollicitudin magna massa venenatis enim. Suspendisse potenti. Vestibulum viverra blandit pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam dapibus varius ornare. Mauris lacinia felis finibus augue mollis, a sodales est ultrices. Donec pharetra congue velit, ac congue leo aliquet eget. Sed porta rhoncus orci, accumsan mollis mi dignissim eget.</p>
+                    <p class="signika_negative"><a href="">#Lorem</a> <a href="">#ipsum</a> <a href="">#dolor</a> <a href="">#sit</a> <a href="">#amet</a> <a href="">#consectetur</a> <a href="">#adipiscing</a> <a href="">#elit</a></p>
+                    <h6 class="signika_negative mt-1 open_san text-md pb-4">By <a href="">Marther Carmina</a></h6>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Comment Section -->
+    <section id="comment_section" class="m-auto max-w-lg md:max-w-2xl lg:max-w-5xl xl:max-w-6xl">
+        <h2 class="nunito text-6xl ml-5 mt-10">Comments</h2>
+        <article class=" p-7">
+            <h4 id="commenter" class="signika_negative text-white inline-block w-40 text-lg lg:text-xl">Catrine Ercan</h4>
+            <h6 class="signika_negative text-white inline-block ml-10 mb-2 text-sm lg:text-base">6 hours ago</h6>
+            <p class="text-white signika_negative text-base lg:text-lg">Quisque pharetra porttitor ligula, non dapibus dolor pulvinar quis. Praesent nunc velit, congue sit amet posuere vitae, luctus at urna. In eu iaculis ligula, fringilla viverra neque. Cras nec ligula at massa elementum posuere ac eget magna. Sed non risus elit. In vitae finibus ante, sed ultrices purus. </p>
+        </article>
+        <article class="p-7">
+            <h4 id="commenter" class="signika_negative w-40 text-white inline-block text-lg lg:text-xl">Andrei Lucius</h4>
+            <h6 class="signika_negative text-white inline-block ml-10 mb-2 text-sm lg:text-base">6 hours ago</h6>
+            <p class="signika_negative text-white text-base lg:text-lg">Morbi lacinia elit non ante semper, vitae tempor est eleifend. Suspendisse venenatis diam vel lorem tempor sodales. Integer posuere dolor ac nibh ullamcorper, eu sollicitudin orci ultrices. </p>
+        </article>
+    </section>
+
+    <!-- Submit a Comment -->
+    <section id="form_container" class="text-white max-w-lg md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto p-6">
+        <h2 class="nunito text-5xl mt-10 mb-10">Leave a Comment</h2>
+        <div>
+            <form id="send_comment">
+                <div class="mb-3">
+                    <label for="comment"></label>
+                    <textarea id="comment" class="h-64 w-full pt-2 pl-2 open_san" name="comment" placeholder=" Type a comment..."></textarea>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="inline-block">
+                        <label for="name"></label>
+                        <input class="w-full p-2 open_san" type="text" for="name" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="inline-block">
+                        <label for="email"></label>
+                        <input class="w-full p-2 open_san" type="email" for="email" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <input id="comment_btn" class="open_san text-black text-center px-4 py-3 mt-3 rounded-lg text-2xl w-full" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-10 grid grid-cols-1">
+        <div class="m-auto mt-10">
+            <p class="signika_negative text-center text-sm">Copyright © 2021 ShipIt, Inc</p>
+            <p class="signika_negative text-center text-xl mt-1"><a href="">Contact Us</a></p>
+        </div>
+        <div id="logo" class="p-4 mt-5 m-auto">
+            <a href="home.html">
+                <img class="h-20" src="assets/IMG/logo.png" alt="ShipIt Logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

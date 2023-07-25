@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Signika+Negative" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
+
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <div id="container">
+
+        <div id="content_wrap">
+            <!-- Header -->
+            <header class="flex flex-wrap flow-row md:justify-between items-center bg-black">
+                <div id="logo" class="p-4 w-full md:w-auto md:m-0">
+                    <a href="home.html">
+                        <img class="h-28 m-auto inline-block" src="assets/IMG/anchor.png" alt="ShipIt Logo">
+                        <div class="inline-block">
+                            <h1 class="text-6xl font-black nunito">ShipIt</h1>
+                        </div>
+                    </a>
+                </div>
+                <navbar>
+                    <ul class="nunito list-none flex flex-col items-center font-semibold text-xl md:flex-row md:space-x-14 p-4 md:p-6 lg:p-14 w-screen md:w-auto">
+                        <li class="p-2"><a href="login_page.html">Login</a></li>
+                        <li class="p-2"><a href="home.html">Posts</a></li>
+                        <li class="p-2"><a href="users.html">Users</a></li>
+                        <li class="p-2"><a href="profile_page.html">Profile</a></li>
+                    </ul>
+                </navbar>
+            </header>
+            <!-- Login  -->
+            <section id="login"  class="max-w-lg grid grid-cols-1 m-auto mt-14 md:mt-2 p-6 md:max-w-2xl lg:max-w-5xl xl:max-w-6xl">
+                <h2 class="nunito text-center mt-80 md:mt-40 text-6xl mb-10">LOGIN</h2>
+                <article>
+                    <form class="grid justify-items-center">
+                        <label for="username" class="signika_negative gray text-white mt-10 pb-2 text-base w-full mt-4 lg:w-1/2">User ID</label>
+                        <input id="username" class="bg-transparent text-white open_san pb-2 block w-full mt-4 lg:w-1/2 mb-4" type="username" value="admin" placeholder="Username" minlength="2" maxlength="15" required>
+                        <label for="password" class="signika_negative gray text-white pb-2 text-base w-full mt-4 lg:w-1/2">Password</label>
+                        <input id="password" class="bg-transparent text-white open_san pb-2 block w-full mt-4 lg:w-1/2 mb-4" type="password" value="12345" placeholder="Password" minlength="2" maxlength="20" required>
+                        <a href="/" class="scale open_san gray w-full mt-4 lg:w-1/2 justify-items-center">Forgot password?</a>
+                        <input id="login-btn" class="open_san text-black text-center px-4 py-3 rounded-lg text-2xl mt-4 w-full lg:w-1/2 mt-14" type="button" value="Login!">
+                        <p class="gray mt-10 open_san justify-items-start">Don't have an account? <spam class="scale gold ml-1"><a href="/">Sign up</a></spam></p>
+                    </form>
+                </article>
+            </section>
+            <!-- Edit Account -->
+            <section id="edit"  class="max-w-lg grid grid-cols-1 m-auto mt-14 md:mt-10 p-6 md:max-w-2xl lg:max-w-5xl xl:max-w-6xl">
+                <h2 class="nunito text-center mt-80 md:mt-40 text-6xl mb-10">Edit Account</h2>
+                <article>
+                    <form class="grid justify-items-center">
+                        <label for="username" class="signika_negative gray text-white mt-10 pb-2 text-base w-full mt-4 lg:w-1/2">User ID</label>
+                        <input id="newUsername" class="bg-transparent text-white gold open_san pb-2 block w-full mt-4 lg:w-1/2 mb-4" type="username" placeholder="Username" minlength="2" maxlength="15" required>
+                        <label for="password" class="signika_negative gray text-white pb-2 text-base w-full mt-4 lg:w-1/2">Password</label>
+                        <input id="newPassword" class="bg-transparent text-white open_san pb-2 block w-full mt-4 lg:w-1/2 mb-4" type="password" placeholder="Password" minlength="2" maxlength="20" required>
+                        <input id="edit-btn" class="open_san text-black text-center px-4 py-3 rounded-lg text-2xl mt-4 w-full lg:w-1/2 mt-14" type="button" value="Login!">
+                        <p class="gray mt-10 open_san justify-items-start">Already have an account? <spam class="scale gold ml-1"><a href="login_page.html">Login</a></spam></p>
+                    </form>
+                </article>
+            </section>
+        </div>
+
+        <section class="max-w-lg grid grid-cols-1 m-auto md:max-w-2xl lg:max-w-5xl xl:max-w-6xl">
+                <ul id="output"class="text-white text-center h-96">
+                    <li>Login Credentials</li>
+                </ul>
+        </section>
+        
+
+        <!-- Footer -->
+        <footer id="footer" class="grid grid-cols-1 mt-10">
+            <div class="m-auto mt-10">
+                <p class="signika_negative text-center text-sm">Copyright © 2021 ShipIt, Inc</p>
+                <p class="signika_negative text-center text-xl mt-1"><a href="">Contact Us</a></p>
+            </div>
+            <div id="logo" class="p-4 mt-5 m-auto">
+                <a href="home.html">
+                    <img class="h-20" src="assets/IMG/logo.png" alt="ShipIt Logo">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/JS/script.js" defer></script>
+</body>
+</html>
